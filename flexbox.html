@@ -15,6 +15,7 @@
     </head>
     <body>
         <div class="wrapper">
+            <!--Begin Nav Bar-->
             <nav>
                 <ul class="home">
                     <li><a href="">Home</a></li>
@@ -28,6 +29,13 @@
                     <li><a href="" class="tw"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </nav>
+            <!--End Nav Bar-->
+            
+            <div style="margin: 20px;">
+                <span>Layout: </span>
+                <a href="#" class="stack">Stack</a>
+                <a href="#" class="grid">Grid</a>
+            </div>
             
             <section id="blocks">
                 <article>
@@ -63,5 +71,16 @@
             </section>    
                 
         </div>
+        
+        <!--Allows User to switch from stack to grid layout through anchor tags-->
+        <script>
+            $("a.stack").on("click", function(){
+              $("article").addClass("stack");
+              });
+            
+            $("a.grid").on("click", function(){
+              $("article").removeClass("stack");
+              });
+        </script>
     </body>
 </html>

@@ -83,6 +83,7 @@ article h2{
     }
 } /* end media 768 */
 
+
 @media screen and (max-width: 768px) {
     
     .social{
@@ -90,3 +91,4 @@ article h2{
             justify-content: center;
     }
 } /* End media max width 768 */
+

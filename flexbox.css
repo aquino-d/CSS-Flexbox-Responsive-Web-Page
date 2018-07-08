@@ -75,8 +75,14 @@ article h2{
 
     article{
         flex: 0 1 32%;
+        transition: flex-basis 0.3s linear;
     }
-}
+    
+    article.stack{
+        flex: 0 1 100%;
+    }
+} /* end media 768 */
+
 
 @media screen and (max-width: 768px) {
     
@@ -84,4 +90,5 @@ article h2{
             display: flex;
             justify-content: center;
     }
-}
+} /* End media max width 768 */
+
